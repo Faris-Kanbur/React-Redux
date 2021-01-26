@@ -65,12 +65,12 @@ const cakeReducer = ( state= initialCakeState, action) =>{
 }
 
 const iceCreamReducer = ( state= initialIceCreamState, action) =>{
-    switch(action.type) {
+    switch(action.type) { 
         case BUY_ICECREAM: return {
             ...state,
             numOfIceCreams: state.numOfIceCreams - 1
         }
-
+ 
         default: return state
     }
 }
